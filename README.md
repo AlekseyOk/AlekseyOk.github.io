@@ -1,3 +1,3 @@
 # Aleksey Vishnijak
  
-[business card](AlekseyOk.github.io/business_card/ "click me")
+[business card](https://alekseyok.github.io/business_card/ "click me")
