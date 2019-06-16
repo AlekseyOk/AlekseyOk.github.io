@@ -267,6 +267,9 @@ a { /* почему не работает с данным классом about-c
     height: 100%; 
     background-color: #898989;
 }
+.level-70:before {
+    width: 70%;
+}
 .level-50:before {
     width: 50%;
 }
