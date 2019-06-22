@@ -339,7 +339,66 @@ section.features .prev {
         }
     }
 }
+/* Мы развеем все опасения*/
+.problems {
+    position: relative;
+    &-women {
+        position: absolute;
+        width: 30rem;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-60%);
+    }
+    &-list {
+     border: 4px solid;
+     padding: 2rem;
+     min-height: 35rem;
+     margin-bottom: 2rem;
+     h4 {
+        font-size: 2.1rem;
+        .bold();
+     }
+    ul {
+        padding-left: 0;
+        padding-top: 2rem;
+        list-style: none;
+        li {
+            &:before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                display: inline-block;
+                width: 3rem;
+                height: 3rem;
+             }
+             margin-bottom: 3rem;
+             padding-left: 3.5rem;
+             position: relative;
+        }
 
+    }
+    &_bad {
+        border-color: #e8e8e8;
+        h4 {
+            opacity: 0.5; 
+        }
+        ul li:before {
+            background: url(../img/cancel.png) center no-repeat;
+            background-size: 60%;
+        }
+        
+    }
+    &_good {
+        border-color: @icons-color;
+        ul li:before {
+            background: url(../img/checked.png) center no-repeat;
+            background-size: 70%;
+        } 
+    }
+ }
+}
 /* оформление модальных окон*/
 .popup {
     display: none;
@@ -474,6 +533,29 @@ section.features .prev {
                 font-size: 10px;
             }
         }
+        .problems {
+            position: relative;
+            &-women {
+                position: absolute;
+                width: 30rem;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-60%);
+                display: none;
+            }
+            &-list {
+                border: 4px solid;
+                padding: 2rem;
+                min-height: 40rem;
+                &_good {
+                    border-color: @icons-color;
+                    ul li:before {
+                        background: url(../img/checked.png) center no-repeat;
+                        background-size: 70%;
+                    } 
+                }
+            }
+        }
 }
 @media (max-width:768px) {
     .main {
@@ -501,6 +583,18 @@ section.features .prev {
         min-height: 20rem;
 
     }
+    .problems {
+        &-list {
+         min-height: 20rem;
+         &_good {
+            border-color: @icons-color;
+            ul li:before {
+                background: url(../img/checked.png) center no-repeat;
+                background-size: 70%;
+            } 
+        }
+     }
+    } 
 }
 @media (max-width:576px) {
     .main {
@@ -512,4 +606,9 @@ section.features .prev {
     .main-title {
         text-align: center;
     }
+    .problems {
+        &-list {
+         min-height: 15rem;
+     }
+    } 
 }
