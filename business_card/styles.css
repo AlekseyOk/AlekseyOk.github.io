@@ -279,6 +279,9 @@ a { /* почему не работает с данным классом about-c
 .level-40:before {
     width: 40%;
 }
+.level-30:before {
+    width: 40%;
+}
 @media (max-width: 1024px) {
     .container  {
         width: 90%;
