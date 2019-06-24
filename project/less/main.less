@@ -399,6 +399,36 @@ section.features .prev {
     }
  }
 }
+
+    //   Материалы
+.materials {
+    background:white url(../img/materials-bg.jpg) center no-repeat;
+    background-size: cover;
+    h2 {
+        margin-bottom: 6rem;
+    }
+    p {
+        margin-bottom: 5rem; 
+        .reg();
+    }
+    &-slider {
+        padding-top: 5rem;
+    }
+    &-link {
+        color: @icons-color;
+        border-bottom: 1px dotted @icons-color;
+        &:hover {
+            color: darken(@icons-color,10%);
+        }
+    }
+    &-offer {
+        margin-top: 4rem; 
+    }
+    img {
+    display: block;
+    margin: 0 auto;
+    }
+}
 /* оформление модальных окон*/
 .popup {
     display: none;

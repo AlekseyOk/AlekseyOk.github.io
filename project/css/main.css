@@ -353,6 +353,34 @@ section.features .next {
   background: url(../img/checked.png) center no-repeat;
   background-size: 70%;
 }
+.materials {
+  background: white url(../img/materials-bg.jpg) center no-repeat;
+  background-size: cover;
+}
+.materials h2 {
+  margin-bottom: 6rem;
+}
+.materials p {
+  margin-bottom: 5rem;
+  font-family: 'ProximaNovaRegular', sans-serif;
+}
+.materials-slider {
+  padding-top: 5rem;
+}
+.materials-link {
+  color: #46b814;
+  border-bottom: 1px dotted #46b814;
+}
+.materials-link:hover {
+  color: #348a0f;
+}
+.materials-offer {
+  margin-top: 4rem;
+}
+.materials img {
+  display: block;
+  margin: 0 auto;
+}
 /* оформление модальных окон*/
 .popup {
   display: none;
