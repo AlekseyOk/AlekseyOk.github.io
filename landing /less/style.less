@@ -112,6 +112,7 @@ form {
     &-content {
         padding: 150px 0 200px 0;
         background: #fff url(../pictures/main-content/banner.jpg) center center no-repeat;
+        margin-bottom: 60px;
 
         &-button {
             cursor: pointer;
@@ -166,6 +167,7 @@ form {
 .services {
     &-titles {
         text-align: center;
+        position: relative;
     }
 
     &-title {
@@ -176,7 +178,6 @@ form {
         line-height: 20px;
         letter-spacing: 4px;
         text-transform: uppercase;
-        margin-top: 60px;
         color: #ED1B24;
     }
 
@@ -189,7 +190,11 @@ form {
         color: #060402;
         margin-top: 10px;
     }
-
+    &-element {
+        position: absolute;
+        top:-60px;
+        right:0;
+    }
     &-line {
         width: 97px;
         height: 2px;
@@ -388,6 +393,10 @@ form {
         font-size: 10px;
     }
 
+    .services-element {
+        display: none;
+    }
+
     .maximize-revenues {
         h1 {
             font-size: 30px;
@@ -531,6 +540,10 @@ form {
 }
 
 @media (max-width: 767px) {
+    .main {
+        padding-bottom: 50px;
+    }
+    
     .nav {
         margin-left: 20px;
     }
@@ -588,9 +601,22 @@ form {
         }
     }
 
+    .maximize-revenues {
+        h1 {
+            margin-top: 20px;
+            padding-top: 50px;
+        }
+    }
+
     .services-union {
         display: none;
     } 
+
+    .mms-messaging {
+        hr {
+            margin-bottom: 25px;
+        }
+    }
 
     .mms-messaging-pictures {
         display: none;
